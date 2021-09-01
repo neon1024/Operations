@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+        }
+        
+        #result {
+
+            display: block;
+
+            margin-top: 10vw;
+
+            margin-left: auto;
+            margin-right: auto;
+
+            background-color: black;
+
+            color: black;
+
+            border-style: solid;
+            border-width: 2px;
+            
+            width: 300px;
+
+            padding: 10px;
+
+            text-align: center;
+
+            font-family: 'Roboto', sans-serif;
+            font-size: bold;
+
+            
+        }
+
+        .buttons {
+            display: block;
+
+            margin-top: 20vw;
+
+            margin-left: auto;
+            margin-right: auto;
+
+            width: 100%;
+        }
+
+        button {
+            display: block;
+
+            width: 40vw;
+            text-align: center;
+
+            margin-left: auto;
+            margin-right: auto;
+
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            font-size: 2vh;
+
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+
+            padding: 2px;
+        }
+
+        button:hover {
+            background-color:magenta;
+        }
+
+        button:active {
+            background-color: cyan;
+        }
+
+        .moving-block {
+            position: relative;
+
+            animation-name: square;
+            animation-delay: 1s;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+
+        @keyframes square {
+            0%  {background-color: red; border-color: red; left: 0px; top: 0px; animation-timing-function: ease-in-out;}
+            20% {background-color: yellow; border-color:yellow; left: 100px; top: 0px; animation-timing-function: ease-in-out;}
+            40% {background-color: greenyellow; border-color:greenyellow; left: 100px; top: 100px; animation-timing-function: ease-in-out;}
+            60% {background-color: green; border-color: green; left: -100px; top: 100px; animation-timing-function: ease-in-out;}
+            80% {background-color: cyan; border-color:cyan; left: -100px; top: 0px; animation-timing-function: ease-in-out;}
+            100% {background-color: blue; border-color:blue; left: 0px; top: 0px; animation-timing-function: ease-in-out;}
+        }
+
+    </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+    
+    <p id="result" class="moving-block">
+        result
+    </p>
+
+    <div class="buttons">
+
+        <button type="button" onclick="sumOfTwoNumbers()">
+            sum of 1290 and 399893
+        </button>
+
+        <button type="button" onclick="differentionOfTwoNumbers()">
+            differention of 9293 and 1892
+        </button>
+
+        <button type="button" onclick="multiplicationOfTwoNumbers()">
+            multiplication of 9291 and 3402
+        </button>
+
+        <button type="button" onclick="divisionOfTwoNumbers()">
+            division of 892 and 28
+        </button>
+
+        <button type="button" onclick="moduloOfTwoNumbers()">
+            modulo of 2901 and 929
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+
+
